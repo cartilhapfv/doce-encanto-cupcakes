@@ -4,8 +4,6 @@
 
 Registrar uma proposta inicial das informações que o aplicativo precisa organizar para atender ao escopo descrito no PIT I: vitrine virtual, pedidos eletrônicos, pagamentos e entregas.
 
-Esta modelagem é uma organização inicial derivada do escopo registrado no relatório do PIT I. Não corresponde a um diagrama ou banco de dados físico já implementado.
-
 ## 2. Entidades propostas
 
 ### Produto
@@ -55,6 +53,5 @@ Esta modelagem é uma organização inicial derivada do escopo registrado no rel
 
 ## 5. Situação e limites
 
-Este documento registra uma proposta conceitual inicial para orientar a organização dos dados. O relatório do PIT I consultado não contém um modelo de dados anterior para comparação.
+Este documento registra uma proposta conceitual inicial para orientar a organização dos dados. 
 
-O projeto lógico detalhado, a definição de tipos de dados, chaves e restrições e a implementação física do banco de dados são etapas posteriores. Não há banco de dados físico implementado nesta revisão.
