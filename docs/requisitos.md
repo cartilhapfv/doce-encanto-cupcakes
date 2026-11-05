@@ -1,90 +1,100 @@
-# Requisitos e histórias de usuário — Doce Encanto
+# Revisão do escopo e requisitos — Doce Encanto
 
-## 1. Visão do produto
+## 1. Origem do projeto
 
-O Doce Encanto será um aplicativo mobile para uma loja fictícia de cupcakes gourmet. A solução dará continuidade ao PIT I, que identificou a necessidade de uma vitrine virtual e de um fluxo organizado de pedidos, pagamentos e entregas.
+O projeto foi iniciado no PIT I a partir de uma situação envolvendo uma loja fictícia de cupcakes gourmet que precisava de um aplicativo mobile após uma experiência negativa com uma empresa de desenvolvimento.
 
-## 2. Objetivo
+O relatório do PIT I identificou como necessidades principais:
+- apresentar os produtos em uma vitrine virtual;
+- permitir pedidos eletrônicos;
+- contemplar pagamentos;
+- contemplar entregas.
 
-Permitir que o cliente conheça os cupcakes disponíveis e registre um pedido de maneira simples, clara e organizada.
+## 2. Objetivo revisado
 
-## 3. Escopo funcional
+Organizar os requisitos de um aplicativo mobile para que clientes possam consultar cupcakes e montar pedidos de forma clara, reduzindo falhas de comunicação entre o negócio e a equipe responsável pelo desenvolvimento.
 
-O protótipo deverá contemplar:
-1. Apresentação da loja.
-2. Catálogo de produtos.
-3. Detalhes dos produtos.
-4. Seleção de itens e quantidades.
-5. Carrinho e resumo do pedido.
-6. Identificação do cliente.
-7. Endereço de entrega.
-8. Escolha demonstrativa da forma de pagamento.
-9. Confirmação do pedido.
+## 3. Escopo funcional revisado
+
+O fluxo previsto para o aplicativo é:
+
+1. Apresentar a loja.
+2. Exibir a vitrine/catálogo de cupcakes.
+3. Mostrar informações de cada produto.
+4. Permitir selecionar produtos e quantidades.
+5. Organizar os itens em um pedido.
+6. Registrar os dados necessários para o pedido.
+7. Registrar as informações de pagamento.
+8. Registrar as informações de entrega.
+9. Apresentar a confirmação/resumo do pedido.
+
+O escopo acima organiza e detalha as necessidades citadas no PIT I. Não significa que essas funções já estejam implementadas.
 
 ## 4. Requisitos funcionais
 
 | Código | Requisito |
 |---|---|
-| RF01 | O sistema deve apresentar o nome e uma breve descrição da loja. |
-| RF02 | O sistema deve exibir o catálogo de cupcakes disponíveis. |
-| RF03 | Cada produto deve apresentar nome, imagem, descrição e preço. |
-| RF04 | O cliente deve conseguir visualizar os detalhes de um produto. |
-| RF05 | O cliente deve conseguir adicionar produtos ao carrinho. |
-| RF06 | O cliente deve conseguir alterar a quantidade ou remover um item do carrinho. |
-| RF07 | O sistema deve calcular e apresentar o subtotal e o total do pedido. |
-| RF08 | O sistema deve permitir informar nome e telefone de contato. |
-| RF09 | O sistema deve permitir informar o endereço de entrega. |
-| RF10 | O cliente deve conseguir selecionar uma forma de pagamento demonstrativa. |
-| RF11 | O sistema deve apresentar uma revisão dos dados e itens do pedido. |
-| RF12 | O sistema deve apresentar uma tela de confirmação do pedido. |
+| RF01 | O aplicativo deve apresentar a loja de cupcakes gourmet. |
+| RF02 | O aplicativo deve exibir uma vitrine com os cupcakes disponíveis. |
+| RF03 | O aplicativo deve apresentar informações dos produtos, incluindo nome, descrição e preço. |
+| RF04 | O cliente deve poder selecionar um ou mais produtos. |
+| RF05 | O cliente deve poder informar a quantidade de cada produto. |
+| RF06 | O aplicativo deve organizar os produtos selecionados em um pedido. |
+| RF07 | O aplicativo deve apresentar o resumo dos itens e dos valores do pedido. |
+| RF08 | O aplicativo deve permitir registrar os dados necessários para identificar o cliente. |
+| RF09 | O aplicativo deve permitir registrar as informações necessárias para a entrega. |
+| RF10 | O aplicativo deve permitir registrar a forma de pagamento escolhida. |
+| RF11 | O aplicativo deve apresentar a confirmação ou resumo final do pedido. |
 
 ## 5. Requisitos não funcionais
 
 | Código | Requisito |
 |---|---|
-| RNF01 | A interface deve priorizar a navegação em celulares. |
-| RNF02 | A navegação deve ser simples, consistente e intuitiva. |
-| RNF03 | Textos, preços e botões devem ser legíveis. |
-| RNF04 | O sistema deve fornecer retorno visual após ações importantes. |
-| RNF05 | As telas devem organizar as informações de forma clara. |
-| RNF06 | Devem ser utilizados dados fictícios durante a demonstração e os testes. |
-| RNF07 | O protótipo não deve solicitar dados bancários ou realizar cobranças reais. |
+| RNF01 | A solução deve ser pensada para uso em dispositivos móveis. |
+| RNF02 | A navegação deve ser simples e compreensível para o cliente. |
+| RNF03 | As informações dos produtos e do pedido devem ser apresentadas com clareza. |
+| RNF04 | As etapas do pedido devem manter uma sequência lógica e consistente. |
+| RNF05 | Os dados do cliente e do pedido devem ser tratados de forma organizada. |
 
-## 6. Histórias de usuário
+## 6. Histórias de usuário revisadas
 
-- **HU01 — Conhecer a loja:** Como cliente, quero visualizar a apresentação da loja para conhecer seus produtos.
-- **HU02 — Consultar catálogo:** Como cliente, quero visualizar os cupcakes disponíveis para escolher o que desejo comprar.
-- **HU03 — Ver detalhes:** Como cliente, quero consultar a descrição e o preço de um cupcake para decidir minha compra.
-- **HU04 — Montar pedido:** Como cliente, quero adicionar produtos e quantidades ao carrinho para montar meu pedido.
-- **HU05 — Revisar carrinho:** Como cliente, quero visualizar, alterar ou remover itens para conferir meu pedido antes de continuar.
-- **HU06 — Informar contato:** Como cliente, quero informar meu nome e telefone para que a loja possa identificar o pedido.
-- **HU07 — Informar entrega:** Como cliente, quero informar o endereço para indicar onde o pedido deverá ser entregue.
-- **HU08 — Escolher pagamento:** Como cliente, quero selecionar uma forma de pagamento para indicar como pretendo pagar.
-- **HU09 — Confirmar pedido:** Como cliente, quero revisar as informações e visualizar a confirmação para saber que concluí o fluxo de pedido.
+- **HU01 — Conhecer a loja:** Como cliente, quero visualizar a loja para conhecer o negócio e seus produtos.
+- **HU02 — Consultar produtos:** Como cliente, quero visualizar os cupcakes disponíveis para escolher o que desejo.
+- **HU03 — Conhecer um produto:** Como cliente, quero consultar as informações de um cupcake para decidir se desejo comprá-lo.
+- **HU04 — Selecionar produtos:** Como cliente, quero selecionar produtos e quantidades para montar meu pedido.
+- **HU05 — Conferir pedido:** Como cliente, quero visualizar os itens e valores selecionados para conferir minha compra.
+- **HU06 — Informar dados do pedido:** Como cliente, quero informar os dados necessários para que a loja possa identificar e processar meu pedido.
+- **HU07 — Informar entrega:** Como cliente, quero registrar as informações de entrega para receber o pedido.
+- **HU08 — Informar pagamento:** Como cliente, quero indicar a forma de pagamento para concluir as informações do pedido.
+- **HU09 — Confirmar pedido:** Como cliente, quero visualizar a confirmação para conferir o que solicitei.
 
-## 7. Backlog priorizado
+## 7. Mapa de afinidade — organização das necessidades
 
-| Prioridade | Item | Resultado esperado |
-|---|---|---|
-| Alta | Tela inicial | Apresentação da loja |
-| Alta | Catálogo | Listagem dos cupcakes |
-| Alta | Detalhes do produto | Informações e preço |
-| Alta | Carrinho | Inclusão, alteração e remoção de itens |
-| Alta | Dados do cliente | Nome e telefone |
-| Alta | Entrega | Endereço informado |
-| Alta | Forma de pagamento | Seleção demonstrativa |
-| Alta | Confirmação | Resumo final do pedido |
-| Média | Ajustes visuais | Melhorias de identidade e usabilidade |
-| Média | Validação de campos | Evitar envio de dados obrigatórios vazios |
+As necessidades descritas no PIT I podem ser organizadas nos seguintes grupos:
 
-## 8. Critérios de aceitação principais
+| Grupo | Necessidades relacionadas |
+|---|---|
+| Vitrine virtual | Apresentação da loja e consulta dos cupcakes |
+| Produtos | Informações e preços dos cupcakes |
+| Pedidos | Seleção de produtos, quantidades e resumo |
+| Pagamentos | Registro da forma de pagamento |
+| Entregas | Registro das informações necessárias para entrega |
 
-- O cliente consegue localizar e consultar os produtos.
-- O cliente consegue montar um carrinho e conferir quantidades e valores.
-- O cliente consegue preencher os dados fictícios de contato e entrega.
-- O cliente consegue selecionar uma forma de pagamento demonstrativa.
-- O cliente consegue chegar à tela de confirmação com o resumo do pedido.
+## 8. Backlog priorizado
 
-## 9. Limites do protótipo
+| Prioridade | Item do backlog |
+|---|---|
+| Alta | Apresentação da loja |
+| Alta | Vitrine/catálogo de cupcakes |
+| Alta | Informações dos produtos |
+| Alta | Seleção de produtos e quantidades |
+| Alta | Montagem e resumo do pedido |
+| Alta | Registro das informações de pagamento |
+| Alta | Registro das informações de entrega |
+| Alta | Confirmação do pedido |
 
-O projeto acadêmico demonstrará o fluxo de pedido. Não contemplará processamento financeiro real, integração com transportadora/entregador, emissão fiscal ou publicação em loja oficial de aplicativos. Esses limites deverão ser informados na apresentação e no manual.
+## 9. Pontos que precisam de artefatos originais para revisão
+
+O arquivo preenchido do PIT I disponibilizado para esta revisão contém o relato da situação-problema, objetivo, conceitos, metodologia, tempo, procedimento e resultado. Ele não apresenta diagramas UML, protótipo de telas, mensagens de erro ou mapa conceitual detalhado.
+
+Esses elementos não foram declarados como revisados nesta documentação porque os respectivos arquivos originais não constam no material do PIT I consultado. Caso existam em outros arquivos do projeto, deverão ser incorporados e revisados a partir deles.
