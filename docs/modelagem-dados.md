@@ -2,56 +2,59 @@
 
 ## 1. Objetivo
 
-Descrever as principais informações que o aplicativo precisa representar para permitir a consulta de produtos e a montagem de pedidos.
+Registrar uma proposta inicial das informações que o aplicativo precisa organizar para atender ao escopo descrito no PIT I: vitrine virtual, pedidos eletrônicos, pagamentos e entregas.
 
-## 2. Entidades previstas
+Esta modelagem é uma organização inicial derivada do escopo registrado no relatório do PIT I. Não corresponde a um diagrama ou banco de dados físico já implementado.
+
+## 2. Entidades propostas
 
 ### Produto
-- id_produto: identificador único.
-- nome: nome do cupcake.
-- descricao: descrição do produto.
-- preco: preço unitário.
-- imagem: referência da imagem ilustrativa.
-- disponivel: indica se o produto está disponível no catálogo.
+- **id_produto:** identificador do produto.
+- **nome:** nome do cupcake.
+- **descricao:** descrição do produto.
+- **preco:** preço do produto.
+- **imagem:** referência da imagem de apresentação.
+- **disponivel:** indica se o produto está disponível.
 
 ### Cliente
-- id_cliente: identificador único.
-- nome: nome informado pelo cliente.
-- telefone: telefone para contato.
+- **id_cliente:** identificador do cliente.
+- **nome:** nome do cliente.
+- **telefone:** contato do cliente.
 
 ### Pedido
-- id_pedido: identificador único.
-- id_cliente: referência ao cliente.
-- data_pedido: data e hora do pedido, se suportadas pela plataforma.
-- endereco_entrega: endereço informado.
-- forma_pagamento: opção selecionada.
-- valor_total: total do pedido.
-- status: situação demonstrativa do pedido.
+- **id_pedido:** identificador do pedido.
+- **id_cliente:** cliente relacionado ao pedido.
+- **data_pedido:** data do pedido.
+- **endereco_entrega:** informação necessária para entrega.
+- **forma_pagamento:** forma de pagamento informada.
+- **valor_total:** valor total do pedido.
 
 ### ItemPedido
-- id_item: identificador único.
-- id_pedido: referência ao pedido.
-- id_produto: referência ao produto.
-- quantidade: quantidade escolhida.
-- preco_unitario: preço do produto no momento do pedido.
-- subtotal: quantidade multiplicada pelo preço unitário.
+- **id_item:** identificador do item.
+- **id_pedido:** pedido ao qual o item pertence.
+- **id_produto:** produto selecionado.
+- **quantidade:** quantidade solicitada.
+- **preco_unitario:** preço do produto considerado no pedido.
+- **subtotal:** resultado da quantidade multiplicada pelo preço unitário.
 
-## 3. Relacionamentos
+## 3. Relacionamentos propostos
 
 - Um cliente pode realizar vários pedidos.
-- Um pedido pertence a um cliente.
+- Cada pedido está relacionado a um cliente.
 - Um pedido possui um ou mais itens.
 - Cada item de pedido referencia um produto.
-- Um produto pode aparecer em vários itens de pedidos diferentes.
+- Um produto pode estar presente em vários pedidos.
 
-## 4. Regras de integridade previstas
+## 4. Regras de integridade propostas
 
-- Todo produto deve possuir identificador, nome e preço válido.
-- A quantidade de cada item deve ser maior que zero.
-- O pedido deve possuir ao menos um item.
-- O valor total deve corresponder à soma dos subtotais.
-- Os dados de demonstração devem ser fictícios.
+- Cada produto deve possuir identificador, nome e preço.
+- Cada pedido deve estar relacionado a um cliente.
+- Cada item deve estar relacionado a um pedido e a um produto.
+- A quantidade solicitada deve ser maior que zero.
+- O valor total do pedido deve corresponder à soma dos subtotais dos itens.
 
-## 5. Situação
+## 5. Situação e limites
 
-Esta é a modelagem lógica inicial. O modelo físico, os tipos de dados, as chaves e as restrições serão ajustados conforme o SGBD ou o recurso de dados da plataforma escolhida. Não há banco de dados implementado neste momento.
+Este documento registra uma proposta conceitual inicial para orientar a organização dos dados. O relatório do PIT I consultado não contém um modelo de dados anterior para comparação.
+
+O projeto lógico detalhado, a definição de tipos de dados, chaves e restrições e a implementação física do banco de dados são etapas posteriores. Não há banco de dados físico implementado nesta revisão.
