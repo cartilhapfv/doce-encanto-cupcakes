@@ -28,7 +28,6 @@ O fluxo previsto para o aplicativo é:
 8. Registrar as informações de entrega.
 9. Apresentar a confirmação/resumo do pedido.
 
-O escopo acima organiza e detalha as necessidades citadas no PIT I. Não significa que essas funções já estejam implementadas.
 
 ## 4. Requisitos funcionais
 
@@ -92,9 +91,3 @@ As necessidades descritas no PIT I podem ser organizadas nos seguintes grupos:
 | Alta | Registro das informações de pagamento |
 | Alta | Registro das informações de entrega |
 | Alta | Confirmação do pedido |
-
-## 9. Pontos que precisam de artefatos originais para revisão
-
-O arquivo preenchido do PIT I disponibilizado para esta revisão contém o relato da situação-problema, objetivo, conceitos, metodologia, tempo, procedimento e resultado. Ele não apresenta diagramas UML, protótipo de telas, mensagens de erro ou mapa conceitual detalhado.
-
-Esses elementos não foram declarados como revisados nesta documentação porque os respectivos arquivos originais não constam no material do PIT I consultado. Caso existam em outros arquivos do projeto, deverão ser incorporados e revisados a partir deles.
