@@ -1,27 +1,41 @@
 # Decisões tecnológicas — PIT II
 
-Este documento registra as tecnologias efetivamente escolhidas para construir, armazenar e publicar o protótipo.
+## 1. Diretriz de desenvolvimento
 
-## Registro atual
+O projeto será desenvolvido priorizando uma ferramenta visual/no-code, pois a responsável pelo projeto está iniciando em programação. A ferramenta escolhida deverá permitir construir e demonstrar a experiência mobile do aplicativo sem exigir escrita manual de código para as telas principais.
 
-| Item solicitado no PIT II | Decisão | Situação |
+## 2. Decisões e situação
+
+| Elemento | Definição do projeto | Situação |
 |---|---|---|
-| Ferramenta/plataforma de desenvolvimento | A definir | Pendente |
-| Backend | A definir ou não aplicável, conforme a plataforma | Pendente |
-| Banco de dados | A definir ou não aplicável, conforme a plataforma | Pendente |
-| Hospedagem/publicação | A definir | Pendente |
-| Plataforma de execução (web, PWA ou aplicativo nativo) | A definir | Pendente |
-| Modo de desenvolvimento (com código ou no-code) | Preferência inicial por no-code, sujeita à confirmação da ferramenta | Em avaliação |
+| Tipo de solução | Protótipo de aplicativo mobile, com acesso por link e foco em celular | Definido como escopo |
+| Desenvolvimento | Preferência por plataforma no-code | Diretriz definida |
+| Ferramenta específica | Será escolhida após verificar recursos de construção, publicação e armazenamento de dados | Pendente |
+| Front-end | Telas de início, catálogo, produto, carrinho, dados, pagamento e confirmação | Escopo definido; implementação pendente |
+| Back-end | Recurso de processamento/registro de pedidos oferecido pela plataforma, se disponível; caso contrário, o protótipo será limitado a demonstração e isso será declarado | Pendente de validação |
+| Banco de dados/SGBD | Estrutura para produtos, clientes e pedidos; tecnologia será definida conforme a plataforma | Modelagem prevista; implementação pendente |
+| Hospedagem | Publicação da solução por link compartilhável | Serviço específico pendente |
+| Repositório | GitHub: https://github.com/cartilhapfv/doce-encanto-cupcakes | Criado |
+| Versionamento | Documentação, materiais e arquivos exportáveis serão mantidos no GitHub | Em andamento |
 
-## Critérios para escolha
+## 3. Critérios obrigatórios para selecionar a plataforma
 
 A ferramenta deverá:
-- Ser adequada a uma pessoa iniciante em programação.
-- Permitir montar uma interface utilizável em celular.
-- Permitir demonstrar o fluxo de seleção e envio de pedidos.
-- Permitir publicar ou compartilhar uma versão para avaliação.
-- Atender às exigências acadêmicas do PIT II.
+- Ser viável para uma pessoa iniciante.
+- Permitir montar telas adequadas a celular.
+- Permitir apresentar o fluxo de catálogo até confirmação.
+- Permitir compartilhar uma versão para testes de colegas.
+- Informar claramente onde os dados são armazenados.
+- Ter condições de uso compatíveis com a realização e apresentação do trabalho.
 
-## Histórico de decisões
+## 4. Observação sobre código-fonte
 
-As escolhas serão registradas aqui somente depois de confirmadas. Não considerar este documento como comprovação de que a aplicação já foi construída ou publicada.
+O material do PIT II solicita que os artefatos/códigos e a documentação sejam organizados no Git. A utilização de no-code é indicada como apoio, especialmente para o front-end. Antes da entrega, será verificado o que a plataforma permite exportar. Os arquivos exportáveis e os materiais de configuração serão incluídos no repositório. Se a plataforma não disponibilizar código-fonte ou exportação, essa limitação será descrita com transparência e a solução deverá ser reavaliada para atender ao que a atividade exige.
+
+## 5. Segurança e limites
+
+Serão usados dados fictícios. A seleção da forma de pagamento será demonstrativa, sem processamento de cartão, cobrança ou armazenamento de dados bancários.
+
+## 6. Histórico
+
+As tecnologias específicas só serão marcadas como definidas depois de escolhidas e testadas. Não declarar como implementado um serviço que ainda não foi configurado.
