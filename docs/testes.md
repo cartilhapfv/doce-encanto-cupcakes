@@ -1,76 +1,68 @@
-# Plano e registro de testes — Doce Encanto
+# Plano e registros de testes — Doce Encanto
 
 ## 1. Objetivo
 
-Verificar se as pessoas conseguem navegar pelo protótipo e concluir o fluxo de pedido, identificando problemas de uso e funcionamento.
+Realizar verificação e validação do protótipo, observando se o comportamento implementado corresponde aos requisitos e se os usuários conseguem concluir o fluxo de pedido.
 
-## 2. Roteiro sugerido
+## 2. Participantes
 
-Solicitar que cada participante tente:
+A solução será disponibilizada a cinco colegas de curso ou profissionais da área. Cada participante deverá preencher um registro individual. Os nomes, datas, opiniões e resultados serão preenchidos somente após os testes reais.
 
-1. Abrir a aplicação.
-2. Encontrar o catálogo.
-3. Consultar os detalhes de um cupcake.
-4. Adicionar um produto e escolher a quantidade.
-5. Conferir o resumo do pedido.
-6. Informar dados fictícios de contato e entrega.
-7. Escolher uma forma de pagamento demonstrativa.
-8. Chegar à tela de confirmação.
+## 3. Roteiro de execução
 
-## 3. Registros dos cinco participantes
+Pedir que cada participante, usando dados fictícios:
 
-Preencher somente depois que cada teste for realizado. Não inventar nomes, datas ou resultados.
+1. Acesse o aplicativo pelo link.
+2. Localize e consulte o catálogo.
+3. Abra os detalhes de um cupcake.
+4. Adicione um ou mais produtos ao carrinho.
+5. Altere a quantidade ou remova um item.
+6. Confira o resumo e o valor total.
+7. Preencha nome e telefone fictícios.
+8. Informe um endereço fictício de entrega.
+9. Selecione uma forma de pagamento demonstrativa.
+10. Revise as informações e acesse a confirmação.
 
-### Participante 1
-- Nome:
-- Data:
-- O que funcionou:
-- O que falhou:
-- Correções realizadas:
-- Funcionalidade não testada:
+## 4. Formulário individual — duplicar para cada participante
 
-### Participante 2
-- Nome:
-- Data:
-- O que funcionou:
-- O que falhou:
-- Correções realizadas:
-- Funcionalidade não testada:
+### Avaliação
+- Nome de quem testou:
+- Data do teste:
+- Dispositivo/navegador utilizado (opcional):
 
-### Participante 3
-- Nome:
-- Data:
-- O que funcionou:
-- O que falhou:
-- Correções realizadas:
-- Funcionalidade não testada:
+### O que testou e funcionou
+Descrever cada funcionalidade executada com sucesso.
 
-### Participante 4
-- Nome:
-- Data:
-- O que funcionou:
-- O que falhou:
-- Correções realizadas:
-- Funcionalidade não testada:
+### O que testou e não funcionou
+Descrever a funcionalidade, o comportamento observado e o que deverá ser corrigido.
 
-### Participante 5
-- Nome:
-- Data:
-- O que funcionou:
-- O que falhou:
-- Correções realizadas:
-- Funcionalidade não testada:
+### Sugestões de melhoria
+Registrar as sugestões do participante.
 
-## 4. Relatório de qualidade
+### Funcionalidades não testadas
+Informar qual funcionalidade não foi testada e o motivo.
 
-Preencher após os testes:
+### Evidências
+Anexar capturas de tela dos erros ou situações relevantes, quando houver.
 
-- Erros encontrados:
-- Ajustes/correções efetuados:
-- Evidências (capturas de tela ou registros):
-- Problemas conhecidos que permaneceram:
-- Funcionalidades que não puderam ser testadas:
+## 5. Controle dos cinco registros
 
-## 5. Cuidados
+- Participante 1: pendente de realização.
+- Participante 2: pendente de realização.
+- Participante 3: pendente de realização.
+- Participante 4: pendente de realização.
+- Participante 5: pendente de realização.
 
-Utilizar dados fictícios durante os testes. Registrar resultados reais, com autorização dos participantes quando necessário.
+## 6. Correções após os testes
+
+Para cada problema identificado, registrar:
+- Identificação do problema.
+- Participante que o apontou.
+- Requisito/tela afetada.
+- Correção ou melhoria decidida.
+- Situação: pendente, corrigido ou não implementado (com justificativa).
+- Evidência antes/depois, quando aplicável.
+
+## 7. Resultado final
+
+Após concluir os cinco testes, consolidar os resultados e elaborar o relatório de qualidade. Não preencher avaliações, nomes, datas ou correções antes de sua realização.
