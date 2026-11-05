@@ -1,28 +1,18 @@
 # Doce Encanto — Cupcakes Gourmet
 
-Projeto Integrador Transdisciplinar em Engenharia de Software II (PIT II), continuidade do projeto iniciado no PIT I.
+## PIT II — Revisão da documentação do PIT I
 
-## Objetivo
+Este repositório contém somente a documentação revisada do projeto iniciado no PIT I: um aplicativo mobile para uma loja fictícia de cupcakes gourmet.
 
-Desenvolver um aplicativo mobile para uma loja fictícia de cupcakes gourmet, permitindo consultar produtos e simular a realização de pedidos.
+O relatório entregue no PIT I registra a necessidade de uma vitrine virtual e de um fluxo de pedidos eletrônicos, incluindo pagamentos e entregas. A revisão organiza esse escopo em requisitos, histórias de usuário, backlog e uma proposta inicial de dados.
 
-## Documentos do projeto
+## Documentos
 
-- [Requisitos do sistema](docs/requisitos.md) — revisão do planejamento e requisitos do aplicativo.
-- [Decisões tecnológicas](docs/decisoes-tecnologicas.md) — tecnologias escolhidas para desenvolvimento, dados e publicação.
-- [Modelagem de dados](docs/modelagem-dados.md) — estrutura de dados prevista para o sistema.
-- [Manual do usuário](docs/manual-usuario.md) — instruções de utilização do aplicativo.
-- [Testes](docs/testes.md) — formulário e registros dos testes realizados com cinco participantes.
-- [Relatório de qualidade](docs/relatorio-qualidade.md) — falhas encontradas, correções e evidências.
+- [Requisitos, histórias de usuário e backlog](docs/requisitos.md)
+- [Modelagem inicial de dados](docs/modelagem-dados.md)
 
-## Entregáveis a serem incluídos quando concluídos
+## Limites desta revisão
 
-- Arquivos/código-fonte do aplicativo e estrutura de dados.
-- Link da solução publicada.
-- Vídeo narrado demonstrando o funcionamento, com pelo menos cinco minutos.
-- PDF com os cinco registros de avaliação/teste.
-- Vídeo de até cinco minutos apresentando as mudanças realizadas após os testes.
+O arquivo preenchido do PIT I disponível para revisão é o relatório da atividade. Ele não contém diagramas UML, protótipos de telas ou mapas conceituais detalhados. Por isso, esses artefatos não foram apresentados como se já existissem nem foram inventados nesta revisão.
 
-## Situação
-
-O repositório contém a documentação necessária para orientar e registrar o desenvolvimento. A aplicação, a publicação, os testes e os vídeos ainda serão produzidos. Os resultados serão registrados somente depois de realizados.
+Esta etapa contempla apenas a revisão e a organização da documentação no Git. Não representa aplicativo implementado, banco de dados físico executado ou testes realizados.
