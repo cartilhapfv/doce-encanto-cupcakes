@@ -22,11 +22,8 @@ O fluxo previsto para o aplicativo é:
 2. Exibir a vitrine/catálogo de cupcakes.
 3. Mostrar informações de cada produto.
 4. Permitir selecionar produtos e quantidades.
-5. Organizar os itens em um pedido.
-6. Registrar os dados necessários para o pedido.
-7. Registrar as informações de pagamento.
-8. Registrar as informações de entrega.
-9. Apresentar a confirmação/resumo do pedido.
+5. Registrar as informações de entrega.
+6. Apresentar a confirmação/resumo do pedido.
 
 
 ## 4. Requisitos funcionais
