@@ -22,6 +22,5 @@ O aplicativo Android utiliza o componente **TinyDB** para armazenar informaçõe
 - **Limpar formulário:** redefine os campos visíveis, sem excluir os pedidos armazenados.
 
 ## Limitações
-Não existe banco de dados remoto, conta de usuário, integração de pagamento ou sincronização. Os dados ficam restritos ao aplicativo/dispositivo ou ao navegador usado. A limpeza dos dados do aplicativo ou do navegador pode eliminar os registros locais.
+Não existe banco de dados remoto. Os dados ficam restritos ao aplicativo/dispositivo ou ao navegador usado. A limpeza dos dados do aplicativo ou do navegador pode eliminar os registros locais.
 
-Este documento descreve a organização de dados do protótipo, não um banco de dados relacional implementado.
