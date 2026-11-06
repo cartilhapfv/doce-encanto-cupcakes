@@ -1,80 +1,30 @@
 <!doctype html>
 <html lang="pt-BR">
 <head>
-<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="theme-color" content="#b52e65">
-<meta name="description" content="Doce Encanto — demonstração acadêmica de pedidos de cupcakes gourmet.">
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#b52e65"><meta name="description" content="Doce Encanto — demonstração acadêmica de pedidos de cupcakes gourmet.">
 <title>Doce Encanto | Cupcakes Gourmet</title>
 <style>
-:root{font-family:system-ui,-apple-system,"Segoe UI",sans-serif;color:#542a22;background:#fff7f0}*{box-sizing:border-box}body{margin:0}header{background:#fff0f3;padding:43px 18px 34px;text-align:center;border-bottom:1px solid #f5d6df}.brand{font-size:13px;letter-spacing:3px;text-transform:uppercase;font-weight:800;color:#b52e65}h1,h2{font-family:Georgia,serif}h1{font-size:clamp(37px,7vw,58px);margin:12px 0}header p{max-width:560px;margin:0 auto;color:#75554c;line-height:1.6}main{max-width:1050px;margin:auto;padding:35px 20px 65px}h2{text-align:center;font-size:29px;margin:10px 0 26px}.products{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px}.product{background:#fff;border:1px solid #f0dfe1;border-radius:20px;overflow:hidden;box-shadow:0 8px 26px #542a2210;text-align:center;padding-bottom:20px}.art{height:170px;display:grid;place-items:center;background:linear-gradient(140deg,#ffedf0,#fff4df);font-size:90px}.product:nth-child(2) .art{background:linear-gradient(140deg,#ffe1e9,#fff5f0)}.product:nth-child(3) .art{background:linear-gradient(140deg,#f6d4d9,#fff0ec)}.product h3{font-size:19px;margin:18px 0 7px}.price{color:#b52e65;font-weight:800;font-size:23px}.panel{max-width:720px;margin:42px auto 0;background:#fff;border:1px solid #f0dfe1;border-radius:24px;padding:30px;box-shadow:0 8px 28px #542a2210}.panel h2{margin-top:0}.intro{text-align:center;color:#75554c;margin-top:-12px}.field{margin:17px 0}label{display:block;font-weight:700;margin-bottom:7px;font-size:14px}input{width:100%;font:inherit;padding:13px 14px;border:1px solid #d7c5c1;border-radius:10px;background:#fff;color:#542a22}input:focus{outline:3px solid #f9c8d8;border-color:#b52e65}.item{display:flex;align-items:center;gap:14px;justify-content:space-between;padding:14px 0;border-bottom:1px solid #f1e4e1}.item-name{font-weight:700}.item-price{font-size:13px;color:#9d4c6a;margin-top:3px}.item input{width:100px;text-align:center}.item label{margin:0}.total{display:flex;justify-content:space-between;align-items:center;background:#fff2f5;padding:17px 18px;border-radius:12px;margin:23px 0;font-weight:700}.total strong{font-size:24px;color:#b52e65}.actions{display:flex;gap:12px}button{border:0;border-radius:12px;padding:15px 20px;background:#b52e65;color:white;font:inherit;font-weight:800;cursor:pointer}button:hover{background:#94234f}button.secondary{background:#f8e8ed;color:#8b2c52}button.secondary:hover{background:#f1d5e0}button:focus-visible{outline:3px solid #6c2442;outline-offset:2px}.actions button:first-child{flex:1}.message{margin-top:18px;padding:15px;border-radius:10px;background:#eaf7ee;color:#1e6839;display:none}.message.error{background:#fff0ee;color:#a43126}.note{text-align:center;font-size:13px;color:#776b67;margin:22px 0 0;line-height:1.5}.history-head{display:flex;align-items:center;justify-content:space-between;gap:12px;margin-bottom:16px}.history-head h2{text-align:left;margin:0}.history-head button{font-size:13px;padding:10px 13px}.history-empty{color:#776b67;text-align:center;padding:15px}.history-list{list-style:none;margin:0;padding:0}.history-list li{padding:17px 0;border-bottom:1px solid #f1e4e1}.history-list li:last-child{border-bottom:0}.history-title{display:flex;justify-content:space-between;gap:10px;align-items:center}.history-title strong{color:#b52e65}.history-meta{color:#79655e;font-size:13px;margin-top:6px}.history-detail{margin-top:8px;line-height:1.6;overflow-wrap:anywhere}footer{text-align:center;color:#876d65;padding:0 20px 30px;font-size:13px}@media(max-width:650px){.products{grid-template-columns:1fr}.art{height:140px}.product{max-width:420px;width:100%;margin:auto}.panel{padding:20px}.history-head{align-items:flex-start;flex-direction:column}.actions{flex-direction:column}.item input{width:80px}}
+:root{font-family:system-ui,-apple-system,Segoe UI,sans-serif;color:#542a22;background:#fff7f0}*{box-sizing:border-box}body{margin:0}header{background:#fff0f3;padding:44px 20px 32px;text-align:center;border-bottom:1px solid #f6d7e0}.brand{font-size:13px;letter-spacing:3px;text-transform:uppercase;font-weight:800;color:#b52e65}h1{font-family:Georgia,serif;font-size:clamp(36px,7vw,58px);margin:12px 0}header p{max-width:530px;margin:0 auto;color:#75554c;line-height:1.6}main{max-width:1050px;margin:auto;padding:35px 20px 70px}h2{font-family:Georgia,serif;font-size:29px;text-align:center;margin:10px 0 26px}.products{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px}.product{background:#fff;border:1px solid #f0dfe1;border-radius:20px;overflow:hidden;box-shadow:0 8px 26px #542a2210;text-align:center;padding-bottom:24px}.art{height:190px;display:grid;place-items:center;background:linear-gradient(140deg,#ffedf0,#fff4df);font-size:104px}.product:nth-child(2) .art{background:linear-gradient(140deg,#ffe1e9,#fff5f0)}.product:nth-child(3) .art{background:linear-gradient(140deg,#f6d4d9,#fff0ec)}.product h3{font-size:19px;margin:20px 0 7px}.price{color:#b52e65;font-weight:800;font-size:23px}.order{max-width:630px;margin:48px auto 0;background:#fff;border:1px solid #f0dfe1;border-radius:24px;padding:30px;box-shadow:0 8px 28px #542a2210}.order h2{margin-top:0}.field{margin:17px 0}label{display:block;font-weight:700;margin-bottom:7px;font-size:14px}input,select{width:100%;font:inherit;padding:13px 14px;border:1px solid #d7c5c1;border-radius:10px;background:white;color:#542a22}input:focus,select:focus{outline:3px solid #f9c8d8;border-color:#b52e65}.total{display:flex;justify-content:space-between;align-items:center;background:#fff2f5;padding:17px 18px;border-radius:12px;margin:23px 0;font-weight:700}.total strong{font-size:24px;color:#b52e65}button{width:100%;border:0;border-radius:12px;padding:16px;background:#b52e65;color:white;font:inherit;font-weight:800;cursor:pointer}button:hover{background:#94234f}.message{margin-top:18px;padding:15px;border-radius:10px;background:#eaf7ee;color:#1e6839;display:none}.message.error{background:#fff0ee;color:#a43126}.note{text-align:center;font-size:13px;color:#776b67;margin:22px 0 0;line-height:1.5}footer{text-align:center;color:#876d65;padding:0 20px 30px;font-size:13px}@media(max-width:650px){.products{grid-template-columns:1fr}.art{height:150px}.order{padding:22px}.product{max-width:420px;width:100%;margin:auto}}
 </style>
 </head>
 <body>
 <header><div class="brand">Cupcakes gourmet</div><h1>🧁 Doce Encanto</h1><p>Bem-vindo à Doce Encanto! Cupcakes gourmet preparados com carinho para deixar seu dia mais doce.</p></header>
-<main>
-<section aria-labelledby="catalogo"><h2 id="catalogo">Nossos cupcakes</h2><div class="products">
+<main><section aria-labelledby="catalogo"><h2 id="catalogo">Nossos cupcakes</h2><div class="products">
 <article class="product"><div class="art" aria-hidden="true">🧁</div><h3>Chocolate Gourmet</h3><div class="price">R$ 9,00</div></article>
 <article class="product"><div class="art" aria-hidden="true">🍓</div><h3>Morango</h3><div class="price">R$ 10,00</div></article>
 <article class="product"><div class="art" aria-hidden="true">❤️🧁</div><h3>Red Velvet</h3><div class="price">R$ 11,00</div></article>
 </div></section>
-<section class="panel" aria-labelledby="pedido"><h2 id="pedido">Faça seu pedido</h2><p class="intro">Escolha um ou mais sabores e informe a quantidade de cada um.</p>
+<section class="order" aria-labelledby="pedido"><h2 id="pedido">Faça seu pedido</h2>
 <form id="form">
-<fieldset style="border:0;padding:0;margin:22px 0"><legend style="font-weight:800;margin-bottom:10px">Sabores e quantidades</legend>
-<div class="item"><div><label class="item-name" for="q-chocolate">Chocolate Gourmet</label><div class="item-price">R$ 9,00 cada</div></div><input id="q-chocolate" class="qty" type="number" min="0" max="999" step="1" inputmode="numeric" value="0" aria-label="Quantidade de Chocolate Gourmet"></div>
-<div class="item"><div><label class="item-name" for="q-morango">Morango</label><div class="item-price">R$ 10,00 cada</div></div><input id="q-morango" class="qty" type="number" min="0" max="999" step="1" inputmode="numeric" value="0" aria-label="Quantidade de Morango"></div>
-<div class="item"><div><label class="item-name" for="q-velvet">Red Velvet</label><div class="item-price">R$ 11,00 cada</div></div><input id="q-velvet" class="qty" type="number" min="0" max="999" step="1" inputmode="numeric" value="0" aria-label="Quantidade de Red Velvet"></div>
-</fieldset>
+<div class="field"><label for="sabor">Escolha seu cupcake</label><select id="sabor" required><option value="">Escolher sabor do cupcake</option><option value="Chocolate Gourmet">Chocolate Gourmet</option><option value="Morango">Morango</option><option value="Red Velvet">Red Velvet</option></select></div>
 <div class="field"><label for="nome">Seu nome</label><input id="nome" autocomplete="name" maxlength="100" required placeholder="Seu nome"></div>
 <div class="field"><label for="endereco">Endereço para entrega</label><input id="endereco" autocomplete="street-address" maxlength="250" required placeholder="Endereço para entrega"></div>
-<div class="total"><span>Total do pedido</span><strong id="total" aria-live="polite">R$ 0,00</strong></div>
-<div class="actions"><button type="submit">Registrar pedido</button><button type="button" class="secondary" id="limpar">Limpar formulário</button></div>
-<div id="mensagem" class="message" role="status" aria-live="polite"></div>
-</form><p class="note">Demonstração acadêmica: nenhum pagamento ou entrega real é realizado. Os pedidos são salvos somente neste navegador.</p>
-</section>
-<section class="panel" aria-labelledby="historico"><div class="history-head"><h2 id="historico">Histórico de pedidos</h2><button type="button" class="secondary" id="limpar-historico">Apagar histórico</button></div><p class="intro" style="text-align:left;margin:0 0 14px">Consulte os pedidos registrados neste navegador.</p><div id="historico-conteudo" aria-live="polite"></div></section>
-</main><footer>Doce Encanto • Projeto acadêmico</footer>
+<div class="field"><label for="quantidade">Quantidade desejada</label><input id="quantidade" type="number" min="1" max="999" step="1" inputmode="numeric" required placeholder="Quantidade desejada"></div>
+<div class="total"><span>Total do pedido</span><strong id="total">R$ 0,00</strong></div>
+<button type="submit">Registrar pedido</button><div id="mensagem" class="message" role="status" aria-live="polite"></div>
+</form><p class="note">Demonstração acadêmica: nenhum pagamento ou entrega real é realizado. O pedido é salvo somente neste navegador.</p>
+</section></main><footer>Doce Encanto • Projeto acadêmico</footer>
 <script>
-"use strict";
-const catalogo=[{id:"q-chocolate",sabor:"Chocolate Gourmet",preco:9},{id:"q-morango",sabor:"Morango",preco:10},{id:"q-velvet",sabor:"Red Velvet",preco:11}];
-const chave="doce_encanto_historico_pedidos_v1";
-const moeda=new Intl.NumberFormat("pt-BR",{style:"currency",currency:"BRL"});
-const $=id=>document.getElementById(id);
-const mensagem=$("mensagem");
-function itensSelecionados(){return catalogo.map(p=>({...p,quantidade:Number($(p.id).value)})).filter(p=>p.quantidade>0)}
-function quantidadesValidas(){return catalogo.every(p=>{const v=$(p.id).value;return v!==""&&Number.isInteger(Number(v))&&Number(v)>=0&&Number(v)<=999})}
-function atualizarTotal(){const total=quantidadesValidas()?itensSelecionados().reduce((s,p)=>s+p.preco*p.quantidade,0):0;$("total").textContent=moeda.format(total);return total}
-function aviso(texto,erro=false){mensagem.textContent=texto;mensagem.className=erro?"message error":"message";mensagem.style.display="block"}
-function esconderAviso(){mensagem.style.display="none";mensagem.textContent=""}
-function lerHistorico(){try{const dados=JSON.parse(localStorage.getItem(chave)||"[]");return Array.isArray(dados)?dados:[]}catch{return []}}
-function elemento(tag,classe,texto){const e=document.createElement(tag);if(classe)e.className=classe;if(texto!==undefined)e.textContent=texto;return e}
-function renderHistorico(){
-const area=$("historico-conteudo");area.replaceChildren();const historico=lerHistorico();
-if(!historico.length){area.append(elemento("p","history-empty","Nenhum pedido registrado ainda."));return}
-const lista=elemento("ol","history-list");
-historico.slice().reverse().forEach((pedido,i)=>{
-const li=elemento("li");const titulo=elemento("div","history-title");
-titulo.append(elemento("b","",pedido.nome_cliente||"Cliente"),elemento("strong","",moeda.format(Number(pedido.total)||0)));
-li.append(titulo);
-li.append(elemento("div","history-meta",pedido.data?new Date(pedido.data).toLocaleString("pt-BR"):"Pedido registrado"));
-li.append(elemento("div","history-detail",(pedido.itens||[]).map(p=>p.quantidade+" × "+p.sabor).join(" • ")));
-li.append(elemento("div","history-meta","Endereço: "+(pedido.endereco_cliente||"Não informado")));
-lista.append(li)
-});area.append(lista)
-}
-catalogo.forEach(p=>$(p.id).addEventListener("input",()=>{atualizarTotal();esconderAviso()}));
-$("limpar").addEventListener("click",()=>{$("form").reset();atualizarTotal();esconderAviso();$("nome").focus()});
-$("form").addEventListener("submit",e=>{
-e.preventDefault();
-const nome=$("nome").value.trim(),endereco=$("endereco").value.trim(),itens=itensSelecionados();
-if(!nome||!endereco||!quantidadesValidas()||itens.length===0){aviso("Preencha nome e endereço e selecione ao menos um cupcake, com quantidades válidas.",true);return}
-const pedido={nome_cliente:nome,endereco_cliente:endereco,itens:itens.map(({sabor,quantidade,preco})=>({sabor,quantidade,preco})),total:atualizarTotal(),data:new Date().toISOString()};
-try{const historico=lerHistorico();historico.push(pedido);localStorage.setItem(chave,JSON.stringify(historico));$("form").reset();atualizarTotal();aviso("Pedido registrado com sucesso! A Doce Encanto agradece.");renderHistorico()}catch{aviso("Não foi possível salvar o pedido neste navegador. Verifique as configurações de armazenamento.",true)}
-});
-$("limpar-historico").addEventListener("click",()=>{
-if(!lerHistorico().length)return;
-if(!confirm("Deseja apagar todos os pedidos registrados neste navegador? Esta ação não pode ser desfeita."))return;
-try{localStorage.removeItem(chave);renderHistorico();esconderAviso()}catch{aviso("Não foi possível apagar o histórico.",true)}
-});
-atualizarTotal();renderHistorico();
-</script>
-</body></html>
+const precos={"Chocolate Gourmet":9,"Morango":10,"Red Velvet":11};const moeda=new Intl.NumberFormat("pt-BR",{style:"currency",currency:"BRL"});const sabor=document.getElementById("sabor"),quantidade=document.getElementById("quantidade"),total=document.getElementById("total"),mensagem=document.getElementById("mensagem");function atualizar(){const q=Number(quantidade.value);const valido=Number.isInteger(q)&&q>0&&q<=999;total.textContent=moeda.format((precos[sabor.value]||0)*(valido?q:0))}sabor.addEventListener("change",atualizar);quantidade.addEventListener("input",atualizar);document.getElementById("form").addEventListener("submit",e=>{e.preventDefault();const nome=document.getElementById("nome").value.trim(),endereco=document.getElementById("endereco").value.trim(),q=Number(quantidade.value),preco=precos[sabor.value];mensagem.style.display="block";if(!nome||!endereco||!preco||!Number.isInteger(q)||q<1||q>999){mensagem.className="message error";mensagem.textContent="Preencha todos os campos e informe uma quantidade válida.";return}const pedido={nome_cliente:nome,endereco_cliente:endereco,quantidade:q,sabor:sabor.value,total:preco*q};try{localStorage.setItem("doce_encanto_ultimo_pedido",JSON.stringify(pedido));mensagem.className="message";mensagem.textContent="Pedido registrado com sucesso! A Doce Encanto agradece.";document.getElementById("nome").value="";document.getElementById("endereco").value="";quantidade.value="";atualizar()}catch(err){mensagem.className="message error";mensagem.textContent="Não foi possível salvar o pedido neste navegador. Verifique as configurações de armazenamento."}});
+</script></body></html>
