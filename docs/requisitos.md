@@ -1,62 +1,44 @@
-# Revisão do escopo e requisitos — Doce Encanto
+# Requisitos e evolução funcional — Doce Encanto
 
-## 1. Origem do projeto
+## Contexto
+O projeto começou no PIT I como proposta de aplicativo para uma loja fictícia de cupcakes gourmet. A versão implementada concentra-se no registro simples de pedidos. Pagamento online, gestão de entregas e carrinho com vários sabores não integram o protótipo atual.
 
-O projeto foi iniciado no PIT I a partir de uma situação envolvendo uma loja fictícia de cupcakes gourmet que precisava de um aplicativo mobile após uma experiência negativa com uma empresa de desenvolvimento.
+## Requisitos da versão original
+| Código | Requisito | Situação |
+|---|---|---|
+| RF01 | Exibir opções de cupcakes e respectivos preços | Implementado |
+| RF02 | Selecionar um sabor por pedido | Implementado |
+| RF03 | Informar nome e endereço do cliente | Implementado |
+| RF04 | Informar quantidade desejada | Implementado |
+| RF05 | Calcular o total conforme sabor e quantidade | Implementado |
+| RF06 | Registrar e confirmar o pedido | Implementado |
 
-O relatório do PIT I identificou como necessidades principais:
-- apresentar os produtos em uma vitrine virtual;
-- permitir pedidos eletrônicos;
-- contemplar pagamentos;
-- contemplar entregas.
+Sabores e preços utilizados: Chocolate Gourmet (R$ 9,00), Morango (R$ 10,00) e Red Velvet (R$ 11,00).
 
-## 2. Objetivo revisado
+## Melhorias do PIT II
+| Código | Melhoria | Descrição |
+|---|---|---|
+| RF07 | Histórico de pedidos | Consultar registros anteriores, com cliente, endereço, sabor, quantidade e valor |
+| RF08 | Limpar formulário | Apagar os campos do formulário e redefinir o valor exibido, sem apagar o histórico |
 
-Organizar os requisitos de um aplicativo mobile para que clientes possam consultar cupcakes e montar pedidos de forma clara, reduzindo falhas de comunicação entre o negócio e a equipe responsável pelo desenvolvimento.
+As duas melhorias foram incorporadas à lógica do projeto Android e à demonstração web melhorada. O histórico do Android utiliza TinyDB; o histórico web utiliza localStorage, ambos locais.
 
-## 3. Escopo funcional revisado
+## Requisitos não funcionais
+- Interface simples e compreensível.
+- Cálculo claro do total.
+- Organização dos dados de pedido.
+- Armazenamento local, sem necessidade de servidor.
+- Funcionamento voltado à demonstração acadêmica.
 
-O fluxo previsto para o aplicativo é:
+## Fluxo básico
+1. Escolher um sabor.
+2. Informar nome, endereço e quantidade.
+3. Calcular o valor total.
+4. Registrar o pedido e visualizar a confirmação.
+5. Na versão melhorada, consultar o histórico ou limpar os campos.
 
-1. Apresentar a loja.
-2. Exibir a vitrine/catálogo de cupcakes.
-3. Mostrar informações de cada produto.
-4. Permitir selecionar produtos e quantidades.
-5. Registrar as informações de entrega.
-6. Apresentar a confirmação/resumo do pedido.
-
-
-## 4. Requisitos funcionais
-
-| Código | Requisito |
-|---|---|
-| RF01 | O aplicativo deve apresentar a loja de cupcakes gourmet. |
-| RF02 | O aplicativo deve exibir uma vitrine com os cupcakes disponíveis. |
-| RF03 | O aplicativo deve apresentar informações dos produtos, incluindo nome, descrição e preço. |
-| RF04 | O cliente deve poder selecionar os produtos. |
-| RF05 | O cliente deve poder informar a quantidade de cada produto. |
-| RF06 | O aplicativo deve permitir registrar as informações necessárias para a entrega. |
-| RF07 | O aplicativo deve apresentar a confirmação ou resumo final do pedido. |
-
-## 5. Requisitos não funcionais
-
-| Código | Requisito |
-|---|---|
-| RNF01 | A solução deve ser pensada para uso em dispositivos móveis. |
-| RNF02 | A navegação deve ser simples e compreensível para o cliente. |
-| RNF03 | As informações dos produtos e do pedido devem ser apresentadas com clareza. |
-| RNF04 | As etapas do pedido devem manter uma sequência lógica e consistente. |
-| RNF05 | Os dados do cliente e do pedido devem ser tratados de forma organizada. |
-
-
-## 7. Mapa de afinidade — organização das necessidades
-
-As necessidades descritas no PIT I podem ser organizadas nos seguintes grupos:
-
-| Grupo | Necessidades relacionadas |
-|---|---|
-| Vitrine virtual | Apresentação da loja e consulta dos cupcakes |
-| Produtos | Informações e preços dos cupcakes |
-| Pedidos | Seleção de produtos, quantidades e resumo |
-| Entregas | Registro das informações necessárias para entrega |
-
+## Restrições e validação
+- Um sabor por pedido.
+- Sem pagamentos ou entregas reais.
+- Sem sincronização ou banco de dados remoto.
+- A implementação documentada não equivale a teste funcional concluído. Resultados de execução dos APKs no Appetize.io devem ser registrados após a realização dos testes.
