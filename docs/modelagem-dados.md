@@ -1,57 +1,27 @@
-# Modelagem inicial de dados — Doce Encanto
+# Organização e armazenamento de dados — Doce Encanto
 
-## 1. Objetivo
+## Modelo simplificado implementado
+O protótipo registra os seguintes dados para cada pedido:
 
-Registrar uma proposta inicial das informações que o aplicativo precisa organizar para atender ao escopo descrito no PIT I: vitrine virtual, pedidos eletrônicos, pagamentos e entregas.
+| Campo | Descrição |
+|---|---|
+| nome_cliente | Nome informado pelo cliente |
+| endereco_cliente | Endereço informado para entrega |
+| sabor | Um sabor selecionado |
+| quantidade | Quantidade de unidades |
+| total | Valor calculado do pedido |
 
-## 2. Entidades propostas
+Os preços são fixos: Chocolate Gourmet = R$ 9,00; Morango = R$ 10,00; Red Velvet = R$ 11,00. O total corresponde ao preço unitário multiplicado pela quantidade.
 
-### Produto
-- **id_produto:** identificador do produto.
-- **nome:** nome do cupcake.
-- **descricao:** descrição do produto.
-- **preco:** preço do produto.
-- **imagem:** referência da imagem de apresentação.
-- **disponivel:** indica se o produto está disponível.
+## Versão original
+O aplicativo Android utiliza o componente **TinyDB** para armazenar informações localmente. A versão web original mantém uma representação do último pedido no armazenamento local do navegador.
 
-### Cliente
-- **id_cliente:** identificador do cliente.
-- **nome:** nome do cliente.
-- **telefone:** contato do cliente.
+## Versão melhorada
+- **Android:** lista de pedidos anteriores mantida em variável e salva no TinyDB sob a etiqueta `historico_pedidos`, para recuperação quando a tela é iniciada.
+- **Web:** pedidos salvos em uma lista JSON no `localStorage`, com data de registro e os dados do pedido. O histórico é exibido na própria página.
+- **Limpar formulário:** redefine os campos visíveis, sem excluir os pedidos armazenados.
 
-### Pedido
-- **id_pedido:** identificador do pedido.
-- **id_cliente:** cliente relacionado ao pedido.
-- **data_pedido:** data do pedido.
-- **endereco_entrega:** informação necessária para entrega.
-- **forma_pagamento:** forma de pagamento informada.
-- **valor_total:** valor total do pedido.
+## Limitações
+Não existe banco de dados remoto, conta de usuário, integração de pagamento ou sincronização. Os dados ficam restritos ao aplicativo/dispositivo ou ao navegador usado. A limpeza dos dados do aplicativo ou do navegador pode eliminar os registros locais.
 
-### ItemPedido
-- **id_item:** identificador do item.
-- **id_pedido:** pedido ao qual o item pertence.
-- **id_produto:** produto selecionado.
-- **quantidade:** quantidade solicitada.
-- **preco_unitario:** preço do produto considerado no pedido.
-- **subtotal:** resultado da quantidade multiplicada pelo preço unitário.
-
-## 3. Relacionamentos propostos
-
-- Um cliente pode realizar vários pedidos.
-- Cada pedido está relacionado a um cliente.
-- Um pedido possui um ou mais itens.
-- Cada item de pedido referencia um produto.
-- Um produto pode estar presente em vários pedidos.
-
-## 4. Regras de integridade propostas
-
-- Cada produto deve possuir identificador, nome e preço.
-- Cada pedido deve estar relacionado a um cliente.
-- Cada item deve estar relacionado a um pedido e a um produto.
-- A quantidade solicitada deve ser maior que zero.
-- O valor total do pedido deve corresponder à soma dos subtotais dos itens.
-
-## 5. Situação e limites
-
-Este documento registra uma proposta conceitual inicial para orientar a organização dos dados. 
-
+Este documento descreve a organização de dados do protótipo, não um banco de dados relacional implementado.
