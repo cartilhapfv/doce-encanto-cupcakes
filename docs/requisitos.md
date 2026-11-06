@@ -33,14 +33,10 @@ O fluxo previsto para o aplicativo é:
 | RF01 | O aplicativo deve apresentar a loja de cupcakes gourmet. |
 | RF02 | O aplicativo deve exibir uma vitrine com os cupcakes disponíveis. |
 | RF03 | O aplicativo deve apresentar informações dos produtos, incluindo nome, descrição e preço. |
-| RF04 | O cliente deve poder selecionar um ou mais produtos. |
+| RF04 | O cliente deve poder selecionar os produtos. |
 | RF05 | O cliente deve poder informar a quantidade de cada produto. |
-| RF06 | O aplicativo deve organizar os produtos selecionados em um pedido. |
-| RF07 | O aplicativo deve apresentar o resumo dos itens e dos valores do pedido. |
-| RF08 | O aplicativo deve permitir registrar os dados necessários para identificar o cliente. |
-| RF09 | O aplicativo deve permitir registrar as informações necessárias para a entrega. |
-| RF10 | O aplicativo deve permitir registrar a forma de pagamento escolhida. |
-| RF11 | O aplicativo deve apresentar a confirmação ou resumo final do pedido. |
+| RF06 | O aplicativo deve permitir registrar as informações necessárias para a entrega. |
+| RF07 | O aplicativo deve apresentar a confirmação ou resumo final do pedido. |
 
 ## 5. Requisitos não funcionais
 
@@ -52,17 +48,6 @@ O fluxo previsto para o aplicativo é:
 | RNF04 | As etapas do pedido devem manter uma sequência lógica e consistente. |
 | RNF05 | Os dados do cliente e do pedido devem ser tratados de forma organizada. |
 
-## 6. Histórias de usuário revisadas
-
-- **HU01 — Conhecer a loja:** Como cliente, quero visualizar a loja para conhecer o negócio e seus produtos.
-- **HU02 — Consultar produtos:** Como cliente, quero visualizar os cupcakes disponíveis para escolher o que desejo.
-- **HU03 — Conhecer um produto:** Como cliente, quero consultar as informações de um cupcake para decidir se desejo comprá-lo.
-- **HU04 — Selecionar produtos:** Como cliente, quero selecionar produtos e quantidades para montar meu pedido.
-- **HU05 — Conferir pedido:** Como cliente, quero visualizar os itens e valores selecionados para conferir minha compra.
-- **HU06 — Informar dados do pedido:** Como cliente, quero informar os dados necessários para que a loja possa identificar e processar meu pedido.
-- **HU07 — Informar entrega:** Como cliente, quero registrar as informações de entrega para receber o pedido.
-- **HU08 — Informar pagamento:** Como cliente, quero indicar a forma de pagamento para concluir as informações do pedido.
-- **HU09 — Confirmar pedido:** Como cliente, quero visualizar a confirmação para conferir o que solicitei.
 
 ## 7. Mapa de afinidade — organização das necessidades
 
@@ -73,18 +58,5 @@ As necessidades descritas no PIT I podem ser organizadas nos seguintes grupos:
 | Vitrine virtual | Apresentação da loja e consulta dos cupcakes |
 | Produtos | Informações e preços dos cupcakes |
 | Pedidos | Seleção de produtos, quantidades e resumo |
-| Pagamentos | Registro da forma de pagamento |
 | Entregas | Registro das informações necessárias para entrega |
 
-## 8. Backlog priorizado
-
-| Prioridade | Item do backlog |
-|---|---|
-| Alta | Apresentação da loja |
-| Alta | Vitrine/catálogo de cupcakes |
-| Alta | Informações dos produtos |
-| Alta | Seleção de produtos e quantidades |
-| Alta | Montagem e resumo do pedido |
-| Alta | Registro das informações de pagamento |
-| Alta | Registro das informações de entrega |
-| Alta | Confirmação do pedido |
